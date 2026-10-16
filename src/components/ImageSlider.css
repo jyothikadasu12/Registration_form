@@ -1,0 +1,48 @@
+@reference "../index.css";
+.slider-panel {
+  @apply relative hidden w-full h-full overflow-hidden rounded-2xl bg-slate-900 md:block;
+}
+
+.slider-image {
+  @apply absolute inset-0 h-full w-full object-cover transition-opacity duration-500;
+}
+
+.slider-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/30 to-indigo-950/20;
+}
+
+.slider-content {
+  @apply absolute inset-x-0 bottom-0 p-8 text-white lg:p-10;
+}
+
+.slider-eyebrow {
+  @apply text-xs font-bold tracking-[0.25em] text-indigo-200;
+}
+
+.slider-content h2 {
+  @apply mt-4 max-w-sm text-3xl font-bold leading-tight lg:text-4xl;
+}
+
+.slider-content p {
+  @apply mt-3 max-w-sm text-sm leading-6 text-slate-200;
+}
+
+.slider-controls {
+  @apply mt-7 flex items-center gap-4;
+}
+
+.slider-arrow {
+  @apply flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-white transition hover:bg-white/20;
+}
+
+.slider-dots {
+  @apply flex items-center gap-2;
+}
+
+.slider-dot {
+  @apply h-2 w-2 rounded-full bg-white/50 transition;
+}
+
+.slider-dot.active {
+  @apply w-6 bg-white;
+}

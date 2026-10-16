@@ -1,0 +1,16 @@
+@reference "../index.css";
+.phone-row {
+  @apply flex w-full gap-2;
+}
+
+.country-select {
+  @apply w-[45%] min-w-0 rounded-lg border border-slate-300 bg-white px-2 py-3 text-xs text-slate-700 outline-none;
+}
+
+.country-select:focus {
+  @apply border-indigo-500 ring-2 ring-indigo-100;
+}
+
+.phone-number {
+  @apply min-w-0 flex-1;
+}

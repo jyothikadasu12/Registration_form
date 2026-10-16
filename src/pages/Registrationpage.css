@@ -1,0 +1,76 @@
+
+@reference "../index.css";
+
+.registration-form-wrapper {
+  @apply w-full;
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+.form-heading {
+  @apply mb-7;
+}
+
+.form-heading h2 {
+  @apply mt-3 text-3xl font-bold tracking-tight text-gray-900 lg:text-4xl;
+}
+
+.form-heading p {
+  @apply mt-2 text-base leading-6 text-gray-500;
+}
+
+.registration-form {
+  @apply flex flex-col gap-5;
+}
+
+.form-name-grid {
+  @apply grid grid-cols-1 gap-5 sm:grid-cols-2;
+}
+
+.registration-page {
+  @apply min-h-screen px-4 py-6 sm:px-6 sm:py-10 lg:px-8;
+}
+
+.registration-card {
+  @apply mx-auto grid min-h-[700px] w-full max-w-6xl grid-cols-1 gap-6 rounded-2xl bg-white p-4 shadow-xl shadow-slate-200/60 md:grid-cols-2 md:gap-8 md:p-6 lg:gap-10 lg:p-8;
+}
+
+.registration-content {
+  @apply flex min-w-0 flex-col px-1 py-2 sm:px-3 md:py-4;
+}
+
+.brand-header {
+  @apply mb-8 flex items-center gap-3;
+}
+
+.brand-icon {
+  @apply flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-md shadow-indigo-200;
+}
+
+.brand-name {
+  @apply text-lg font-bold tracking-tight text-slate-900;
+}
+
+.registration-footer {
+  @apply mt-auto pt-8 text-center text-xs text-slate-400;
+}
+
+@media (min-width: 768px) {
+  .registration-content {
+    @apply justify-center;
+  }
+}
+
+@media (max-width: 767px) {
+  .registration-card {
+    @apply min-h-0;
+  }
+
+  .registration-content {
+    @apply px-1;
+  }
+
+  .registration-footer {
+    @apply mt-8;
+  }
+}

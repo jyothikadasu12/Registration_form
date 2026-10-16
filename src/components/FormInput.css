@@ -1,0 +1,28 @@
+@reference "../index.css";
+.form-field {
+  @apply mb-4 flex min-w-0 flex-col gap-1.5;
+}
+
+.form-label {
+  @apply text-sm font-semibold text-slate-700;
+}
+
+.form-input {
+  @apply w-full rounded-lg border border-slate-300 bg-white px-3.5 py-3 text-sm text-slate-900 outline-none transition;
+}
+
+.form-input:focus {
+  @apply border-indigo-500 ring-2 ring-indigo-100;
+}
+
+.form-input::placeholder {
+  @apply text-slate-400;
+}
+
+.form-input.input-error {
+  @apply border-red-500 focus:ring-red-100;
+}
+
+.form-error {
+  @apply text-xs font-medium text-red-600;
+}

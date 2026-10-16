@@ -1,0 +1,35 @@
+
+@reference "./index.css";
+
+.app {
+  @apply min-h-screen w-full;
+}
+
+/* Global application container */
+#root {
+  @apply min-h-screen w-full;
+}
+
+/* Smooth page rendering */
+.app {
+  animation: appFadeIn 0.5s ease-in-out;
+}
+
+@keyframes appFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Accessibility: respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .app {
+    animation: none;
+  }
+}
