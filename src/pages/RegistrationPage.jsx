@@ -2,7 +2,7 @@
 import { Sparkles } from 'lucide-react'
 import ImageSlider from '../components/ImageSlider'
 import RegistrationForm from '../components/RegistrationForm'
-import './RegistrationPage.css'
+import "./RegistrationPage.css";
 
 function RegistrationPage() {
   return (
